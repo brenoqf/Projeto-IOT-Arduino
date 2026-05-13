@@ -2,7 +2,7 @@
 
 ## Membros do Projeto
 * Breno Queiroga Faustino R.A: 22124001-3
-* Rafael Levi Ramos Fernades R.A: 22124057-5
+* Rafael Levi Ramos Fernandes R.A: 22124057-5
 
 ## 1. Relatório Técnico
 
