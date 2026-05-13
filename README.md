@@ -9,29 +9,22 @@
 ### Descrição do Projeto
 Este projeto consiste em um sistema de controle de acesso para um compartimento seguro, desenvolvido na plataforma **Arduino Uno**. O sistema gerencia a entrada de senhas via 4 botões, valida o acesso através de uma **Máquina de Estados Finita (FSM)** e fornece feedback em tempo real ao usuário por meio de componentes visuais (LCD e LEDs), sonoros (Buzzer) e mecânicos (Servo).
 
-### Componentes Utilizados
-* Arduino Uno R3
-* Display LCD 16x2
-* Micro Servo Motor (Trava mecânica)
-* Buzzer Piezoelétrico (Feedback sonoro)
-* 3 LEDs (Verde, Vermelho e Amarelo)
-* 5 Botões de Pressão (4 para senha, 1 para reset)
-* Resistores
-
 ---
 
 ## 2. Diagrama de Conexão
 
-| Componente | Pino Arduino | Tipo de Sinal |
+| Nome | Quantidade | Componente |
 | :--- | :--- | :--- |
-| LCD (RS, E, D4-D7) | 13, 12, 11, 10, 9, 8 | Digital |
-| Servomotor | 7 | Digital |
-| Buzzer | 6 | Digital |
-| LED Verde | 5 | Digital |
-| LED Vermelho | 4 | Digital |
-| LED Amarelo | 3 | Digital |
-| Botão RESET | 2 | Interrupção |
-| Botões de Senha | A0, A1, A2, A3 | Analógico |
+| U1 | 1 | Arduino Uno R3 |
+| U2 | 1 | LCD 16 x 2 |
+| R1 | 1 | 220 Ω Resistor |
+| D1 | 1 | Vermelho LED |
+| D2 | 1 | Amarelo LED |
+| D3 | 1 | Verde LED |
+| SERVO2 | 1 | Posicional Micro Servo |
+| R6, R7, R8, R10, R2, R3, R4, R5 | 8 | 1 Ω Resistor |
+| S5, S1, S2, S3, S4 | 5 | Botão |
+| PIEZO1 | 1 | Piezo |
 
 ---
 
