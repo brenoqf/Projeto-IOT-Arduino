@@ -5,12 +5,6 @@
 ### Descrição do Projeto
 Este projeto consiste em um sistema de controle de acesso para um compartimento seguro, desenvolvido na plataforma **Arduino Uno**. O sistema gerencia a entrada de senhas via 4 botões, valida o acesso através de uma **Máquina de Estados Finita (FSM)** e fornece feedback em tempo real ao usuário por meio de componentes visuais (LCD e LEDs), sonoros (Buzzer) e mecânicos (Servo).
 
-### Objetivos de Aprendizagem Alcançados
-* **Integração de múltiplos periféricos:** Uso simultâneo de sensores e atuadores.
-* **Lógica de Máquina de Estados:** Gerenciamento dos estados *Trancado*, *Aberto* e *Alerta*.
-* **Interrupções de Hardware:** Implementação de um botão de Reset crítico via interrupção.
-* **Interface de Usuário (UI):** Criação de mensagens dinâmicas e intuitivas no LCD 16x2.
-
 ### Componentes Utilizados
 * Arduino Uno R3
 * Display LCD 16x2
