@@ -9,10 +9,6 @@
 ### Descrição do Projeto
 Este projeto consiste em um sistema de controle de acesso para um compartimento seguro, desenvolvido na plataforma **Arduino Uno**. O sistema gerencia a entrada de senhas via 4 botões, valida o acesso através de uma **Máquina de Estados Finita (FSM)** e fornece feedback em tempo real ao usuário por meio de componentes visuais (LCD e LEDs), sonoros (Buzzer) e mecânicos (Servo).
 
----
-
-## 2. Diagrama de Conexão
-
 | Nome | Quantidade | Componente |
 | :--- | :--- | :--- |
 | U1 | 1 | Arduino Uno R3 |
@@ -25,6 +21,29 @@ Este projeto consiste em um sistema de controle de acesso para um compartimento 
 | R6, R7, R8, R10, R2, R3, R4, R5 | 8 | 1 Ω Resistor |
 | S5, S1, S2, S3, S4 | 5 | Botão |
 | PIEZO1 | 1 | Piezo |
+
+---
+
+## 2. Diagrama de Conexão
+
+| Componente | Pino do Arduino | Tipo de Sinais | Função no Projeto |
+| :--- | :---: | :---: | :--- |
+| **Botão de RESET** | Pino 2 | Digital (Interrupção) | Reinicia o sistema instantaneamente para o estado Trancado e zera os erros. |
+| **LED Amarelo** | Pino 3 | Digital (Saída) | Indica o estado de **ALERTA / BLOQUEADO** após 3 erros de senha. |
+| **LED Vermelho** | Pino 4 | Digital (Saída) | Indica o estado de **TRANCADO** (Cofre Fechado e monitorando). |
+| **LED Verde** | Pino 5 | Digital (Saída) | Indica o estado de **ABERTO** (Acesso Liberado para o usuário). |
+| **Buzzer Piezo** | Pino 6 | Digital (Saída Lógica) | Emite os bipes de feedback multissensorial (常规 toque, erro e alarme). |
+| **Micro Servo Motor** | Pino 7 | Digital (Controle) | Atua como o mecanismo de trava física da porta do cofre. |
+| **Display LCD (D7)** | Pino 8 | Digital (Saída) | Linha de dados (High) para comunicação com o display. |
+| **Display LCD (D6)** | Pino 9 | Digital (Saída) | Linha de dados (High) para comunicação com o display. |
+| **Display LCD (D5)** | Pino 10 | Digital (Saída) | Linha de dados (High) para comunicação com o display. |
+| **Display LCD (D4)** | Pino 11 | Digital (Saída) | Linha de dados (High) para comunicação com o display. |
+| **Display LCD (E)** | Pino 12 | Digital (Saída) | Sinal de ativação de escrita (*Enable*) do display. |
+| **Display LCD (RS)** | Pino 13 | Digital (Saída) | Seleção de Registro (*Register Select*) do display. |
+| **Botão de Senha 1** | Pino A0 | Analógico (Entrada) | Primeiro botão de entrada da combinação secreta. |
+| **Botão de Senha 2** | Pino A1 | Analógico (Entrada) | Segundo botão de entrada da combinação secreta. |
+| **Botão de Senha 3** | Pino A2 | Analógico (Entrada) | Terceiro botão de entrada da combinação secreta. |
+| **Botão de Senha 4** | Pino A3 | Analógico (Entrada) | Quarto botão de entrada da combinação secreta. |
 
 ---
 
