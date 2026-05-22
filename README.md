@@ -4,6 +4,10 @@
 * Breno Queiroga Faustino R.A: 22124001-3
 * Rafael Levi Ramos Fernandes R.A: 22124057-5
 
+## Tinkercad
+
+Link: https://www.tinkercad.com/things/ln7MisG7kmG-projeto-iot?sharecode=_frY--CD46N5ExvKoMtbI5jCsbP3Nngid6dj-Xus1pw
+
 ## 1. Relatório Técnico
 
 ### Descrição do Projeto
